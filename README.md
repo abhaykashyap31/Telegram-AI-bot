@@ -60,7 +60,7 @@ GEMINI_API_KEY=your-gemini-api-key
 
 ### 5️⃣ Run the Bot
 ```bash
-python bot.py
+python main.py
 ```
 
 ## 🤖 AI Models Used
