@@ -40,7 +40,7 @@ This AI-powered Telegram bot provides intelligent responses, image and document 
 
 ### 2️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-repo/telegram-ai-chatbot.git
+git clone https://github.com/abhaykashyap31/Telegram-AI-bot.git
 cd telegram-ai-chatbot
 ```
 
