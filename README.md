@@ -6,7 +6,7 @@
 This AI-powered Telegram bot provides intelligent responses, image and document analysis, and web search capabilities. It integrates with Google Gemini AI to enhance user interactions with AI-generated insights. 
 
 ## 🎥 Demo
-🔗 [Watch the Demo Video](https://drive.google.com/file/d/1eymhELh6P0YVlp59VMmaHD9EEeOhyGCc/view?usp=drive_link) *(Replace with actual lin)*
+🔗 [Watch the Demo Video](https://drive.google.com/file/d/1eymhELh6P0YVlp59VMmaHD9EEeOhyGCc/view?usp=drive_link) 
 
 ## ✨ Features
 - **User Registration:** Secure user registration with phone number verification.
