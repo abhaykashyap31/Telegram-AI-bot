@@ -81,7 +81,7 @@ python main.py
 - ✅ Enhance chatbot memory for context retention.
 
 ## 📩 Contact & Support
-For any issues or feature requests, feel free to raise an issue or contact [your email/contact info].
+For any issues or feature requests, feel free to raise an issue or contact email: abhikashyap4563@gmail.com .
 
 ---
 © 2025 Telegram AI Chatbot | Built with ❤️ using Python & AI
