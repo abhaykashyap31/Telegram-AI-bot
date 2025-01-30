@@ -18,6 +18,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+GEMINI_API_KEY: Final = 'AIzaSyCBNQdzoBQbmBdOrK6vGkVaFBy8Nj8G03E'
+
+BOT_USERNAME: Final = '@project_shady_bot'
+
+TOKEN: Final  = '7903472211:AAHu3vkUHB0fYrlcLLVqwJug7RkhiT8Xxps'
+
+MONGO_URI: Final  = 'mongodb+srv://hw4819903:DimEBr5ijFb2qJF4@telegrambot.jidab.mongodb.net/?retryWrites=true&w=majority&appName=Telegrambot'
+
 TOKEN: Final = os.getenv("BOT_API_KEY")
 BOT_USERNAME: Final = os.getenv("BOT_NAME")
 MONGO_URI: Final = os.getenv("MONGO_URL")
