@@ -14,8 +14,7 @@ logging.basicConfig(
     level=logging.INFO,
 )
 logger = logging.getLogger(__name__)
-
-if __name__ == "__main__":
+def main():
     logger.info("🚀 Starting bot...")
     app = Application.builder().token(TOKEN).build()
 
@@ -29,9 +28,8 @@ if __name__ == "__main__":
     app.add_handler(MessageHandler(filters.Document.PDF, analyze_pdf))
     app.add_handler(
         MessageHandler(
-            (filters.Document.MimeType("image/jpeg") | 
-             filters.Document.MimeType("image/png") | 
-             filters.Document.MimeType("image/jpeg") |
+            (filters.Document.MimeType("image/jpeg") |
+             filters.Document.MimeType("image/png") |
              filters.PHOTO),
             image_analysis
         )
@@ -45,3 +43,11 @@ if __name__ == "__main__":
 
     logger.info("📡 Polling...")
     app.run_polling(poll_interval=3)
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as e:
+        logger.error("❌ Unhandled exception occurred:")
+        logger.error(traceback.format_exc())
