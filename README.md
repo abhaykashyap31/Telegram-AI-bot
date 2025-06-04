@@ -83,5 +83,46 @@ python main.py
 ## 📩 Contact & Support
 For any issues or feature requests, feel free to raise an issue or contact email: abhikashyap4563@gmail.com .
 
+## Deployment on Render
+
+This project is ready to be deployed on [Render](https://render.com/).
+
+### Steps
+
+1. **Push your code to a GitHub repository.**
+2. **Create a new Web Service on Render.**
+3. **Connect your repository.**
+4. Render will detect `render.yaml` and set up the service automatically.
+5. Set the following environment variables in the Render dashboard:
+   - `BOT_API_KEY` (Telegram Bot API token)
+   - `BOT_NAME` (Bot username)
+   - `MONGO_URL` (MongoDB connection string)
+   - `GEMINI_API_KEY` (Google Gemini API key)
+
+### Health Check
+
+Render will use the `/healthz` endpoint for health checks.
+
+### Start Command
+
+Render will use:
+
+```
+python app.py
+```
+
+### Requirements
+
+All dependencies are listed in `requirements.txt`.
+
+---
+
+For local development, you can use:
+
+```
+pip install -r requirements.txt
+python app.py
+```
+
 ---
 © 2025 Telegram AI Chatbot | Built with ❤️ using Python & AI

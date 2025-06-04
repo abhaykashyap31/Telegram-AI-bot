@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: telegram-ai-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    plan: free
+    envVars:
+      - key: BOT_API_KEY
+        sync: false
+      - key: BOT_NAME
+        sync: false
+      - key: MONGO_URL
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false 

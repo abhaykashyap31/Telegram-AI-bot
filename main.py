@@ -7,6 +7,7 @@ from handlers.file_analysis import image_analysis, analyze_pdf
 from handlers.web_search import web_search
 from handlers.error_handler import error
 from config import TOKEN
+from fastapi import FastAPI
 
 # Initialize logging
 logging.basicConfig(
@@ -46,6 +47,11 @@ def main():
     logger.info("📡 Polling...")
     app.run_polling(poll_interval=3)
 
+app_fastapi = FastAPI()
+
+@app_fastapi.get("/healthz")
+def health_check():
+    return {"status": "ok"}
 
 if __name__ == "__main__":
     main()
